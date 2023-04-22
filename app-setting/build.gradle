@@ -1,0 +1,20 @@
+apply from: '../app.gradle'
+
+android {
+    namespace 'cn.jkdev.setting'
+
+//    resourcePrefix 'setting_'
+
+    defaultConfig {
+        if (!isRelease) {
+            applicationId "cn.jkdev.setting"
+            versionCode 1
+            versionName "1.0"
+        }
+    }
+
+
+}
+
+dependencies {
+}

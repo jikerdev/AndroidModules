@@ -1,0 +1,16 @@
+apply from: '../app.gradle'
+
+android {
+    namespace 'cn.jkdev.video'
+
+    defaultConfig {
+        if (!isRelease) {
+            applicationId "cn.jkdev.video"
+            versionCode 1
+            versionName "1.0"
+        }
+    }
+}
+
+dependencies {
+}
