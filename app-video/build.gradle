@@ -1,5 +1,12 @@
 apply from: '../app.gradle'
 
+plugins.apply('org.jetbrains.kotlin.android')
+if (isRelease) {
+    plugins.apply('com.android.library')
+} else {
+    plugins.apply('com.android.application')
+}
+
 android {
     namespace 'cn.jkdev.video'
 
