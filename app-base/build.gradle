@@ -1,0 +1,23 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'cn.jkdev.base'
+    compileSdk 33
+
+    defaultConfig {
+    }
+}
+
+dependencies {
+    implementation androidx.ktx
+    implementation androidx.appcompat
+    implementation androidx.material
+    implementation androidx.onstraintlayout
+
+    testImplementation test.junit
+    androidTestImplementation test.junit_android
+    androidTestImplementation test.espresso
+}

@@ -19,9 +19,15 @@ android {
             versionName "1.0"
         }
     }
-
-
 }
 
 dependencies {
+    implementation androidx.ktx
+    implementation androidx.appcompat
+    implementation androidx.material
+    implementation androidx.onstraintlayout
+
+    testImplementation test.junit
+    androidTestImplementation test.junit_android
+    androidTestImplementation test.espresso
 }
