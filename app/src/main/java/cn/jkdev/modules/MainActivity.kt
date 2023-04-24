@@ -1,22 +1,20 @@
 package cn.jkdev.modules
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-//import cn.jkdev.setting.SettingActivity
-//import cn.jkdev.video.VideoActivity
+import cn.jkdev.base.BaseActivity
+import cn.jkdev.base.ModuleMediator
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        findViewById<View>(R.id.bt_video).setOnClickListener {
-//            startActivity(Intent(this, VideoActivity::class.java))
-//        }
-//        findViewById<View>(R.id.bt_setting).setOnClickListener {
-//            startActivity(Intent(this, SettingActivity::class.java))
-//        }
+        findViewById<View>(R.id.bt_video).setOnClickListener {
+            startActivity(ModuleMediator.ACTIVITY_VIDEO_CLASS)
+        }
+        findViewById<View>(R.id.bt_setting).setOnClickListener {
+            startActivity(ModuleMediator.ACTIVITY_SETTING_CLASS)
+        }
     }
 }

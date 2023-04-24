@@ -43,6 +43,7 @@ dependencies {
     androidTestImplementation test.junit_android
     androidTestImplementation test.espresso
 
+    implementation project(':app-base')
     if (isRelease) {
         implementation project(':app-video')
         implementation project(':app-setting')

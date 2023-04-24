@@ -6,7 +6,6 @@ if (isRelease) {
 }
 
 android {
-    namespace 'cn.jkdev.video'
     compileSdk 32
 
     defaultConfig {

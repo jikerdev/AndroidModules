@@ -16,3 +16,4 @@ rootProject.name = "Modules"
 include ':app'
 include ':app-setting'
 include ':app-video'
+include ':app-base'
