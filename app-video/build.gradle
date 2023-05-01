@@ -2,6 +2,7 @@ apply from: '../app.gradle'
 
 android {
     namespace 'cn.jkdev.video'
+    resourcePrefix 'video_'
 
     defaultConfig {
         if (!isRelease) {

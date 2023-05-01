@@ -6,6 +6,7 @@ plugins {
 android {
     namespace 'cn.jkdev.base'
     compileSdk 33
+    resourcePrefix 'base_'
 
     defaultConfig {
     }

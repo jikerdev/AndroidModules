@@ -2,6 +2,7 @@ apply from: '../app.gradle'
 
 android {
     namespace 'cn.jkdev.setting'
+    resourcePrefix 'setting_'
 
     defaultConfig {
         if (!isRelease) {

@@ -8,7 +8,7 @@ import android.widget.Toast
 open class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_base)
+        setContentView(R.layout.base_activity_base)
     }
 
     protected fun startActivity(className: String, bundle: Bundle? = null) {
