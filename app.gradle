@@ -27,6 +27,25 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+            if (isRelease) {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                java.exclude '**/debug/**'
+            } else {
+                manifest.srcFile 'src/main/AndroidManifestDebug.xml'
+            }
+        }
+        test {
+            java.srcDirs = ['src/test/java']
+        }
+        androidTest {
+            java.srcDirs = ['src/androidTest/java']
+        }
+    }
 }
 
 dependencies {
