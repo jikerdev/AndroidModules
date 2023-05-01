@@ -6,3 +6,7 @@ plugins {
 }
 
 apply from: 'env.gradle'
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

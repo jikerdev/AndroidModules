@@ -6,11 +6,11 @@ if (isRelease) {
 }
 
 android {
-    compileSdk 33
+    compileSdk buildVersion.compileSdk
 
     defaultConfig {
-        minSdk 21
-        targetSdk 33
+        minSdk buildVersion.minSdk
+        targetSdk buildVersion.targetSdk
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -49,13 +49,5 @@ android {
 }
 
 dependencies {
-    implementation androidx.ktx
-    implementation androidx.appcompat
-    implementation androidx.material
-    implementation androidx.onstraintlayout
-
-    testImplementation test.junit
-    androidTestImplementation test.junit_android
-    androidTestImplementation test.espresso
     implementation project(':app-base')
 }

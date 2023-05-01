@@ -1,9 +1,9 @@
 package cn.jkdev.video
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import cn.jkdev.base.BaseActivity
 
-class VideoActivity : AppCompatActivity() {
+class VideoActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.video_activity_video)
